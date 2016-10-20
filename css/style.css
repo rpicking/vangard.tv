@@ -102,8 +102,28 @@ body {
     }
 }
 
+#myCarousels {
+    position: absolute;
+    width: 100%;
+    max-height: 100px;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.crop {
+    max-height: 700px;
+    width: 100%;
+    overflow: hidden;
+}
+.crop img {
+    
+    filter: brightness(60%);
+
+}
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/4.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/3.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
