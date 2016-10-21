@@ -1,10 +1,9 @@
-
 .bg-light-gray {
-  background-color: #DDDDDD;
+    background-color: #DDDDDD;
 }
 
 .bg-darkest-gray {
-  background-color: #222222;
+    background-color: #222222;
 }
 
 .navbar-custom {
@@ -196,25 +195,27 @@ section {
     padding: 50px 0 50px 0;
 }
 
-.intro-section {
+
+/* ----- INTRO ----- */
+
+#intro-section {
     margin-top: 50px;
 }
 
-#plex-section {
-    
+#intro-section #upcoming .feature {
+    display:inline-block;
+    float:none;
+    text-align:left;
+    margin-right:-4px;
+    vertical-align: top;
 }
 
-#request-section {
+#plex-section {}
 
-}
+#request-section {}
 
-#calendar-section {
-}
+#calendar-section {}
 
-#notifications-section {
+#notifications-section {}
 
-}
-
-#upcoming-section {
-
-}
+#upcoming-section {}
