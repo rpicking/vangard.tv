@@ -1,7 +1,5 @@
 h1,
-h2
- {
-
+h2 {
     font-weight: 700;
 }
 
@@ -221,6 +219,10 @@ h2
     }
 }
 
+#indicator-ex .col-md-6 {
+    margin-bottom: 2px;
+}
+
 
 /* ----- SECTIONS ----- */
 
@@ -240,6 +242,7 @@ i {
     margin-right: 5px;
 }
 
+
 /* ----- INTRO ----- */
 
 #intro-section {
@@ -247,36 +250,71 @@ i {
 }
 
 #intro-section #upcoming .feature {
-    display:inline-block;
-    float:none;
+    display: inline-block;
+    float: none;
     vertical-align: top;
 }
 
-/* ----- Plex ----- */
-#plex-section {
 
-}
+/* ----- Plex ----- */
+
+#plex-section {}
+
 
 /* ----- Request ----- */
-#request-section {
 
-}
+#request-section {}
 
 #request-section img {
     margin-top: 10px;
 }
 
-/* ----- Calendar ----- */
-#calendar-section {
 
+/* ----- Calendar ----- */
+
+#calendar-section {}
+
+#calendar-section form {
+    margin-bottom: 6px;
 }
+
+#copy-cal-btn {
+    padding-right: 5px;
+}
+
+.centered {
+    display: inline-block;
+    float: none;
+}
+
 
 /* ----- Notifications ----- */
-#notifications-section {
 
-}
+#notifications-section {}
+
 
 /* ----- Upcoming ----- */
-#upcoming-section {
 
+#upcoming-section {}
+
+
+/* ----- Contact ----- */
+
+#contact-section {}
+
+.pop {
+    cursor: pointer;
+}
+
+.modal {
+    text-align:center;
+}
+
+.modal-dialog {
+    display: inline-block;
+    width: auto;
+}
+
+.modal-dialog .modal-body img {
+    max-height: calc(100vh - 225px);
 }

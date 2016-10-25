@@ -28,9 +28,43 @@
         }
     });
 
+    // Start opening carousel
     $(function() {
         $('#myCarousel').carousel();
     });
 
-})(jQuery); // End of use strict
+    // Open modal after clicking on image
+    $(function() {
+        $('.pop').on('click', function() {
+            $('#imagepreview').attr('src', $(this).find('img').attr('src'));
+            $('#myModalLabel').text($(this).find('img').attr('alt'))
+            $('#imagemodal').modal('show');
+        });
+    });
 
+    // Copy to clipboard button for calendar
+    $('#copy-cal-btn').tooltip();
+    $('#copy-cal-btn').bind('click', function() {
+        var input = document.querySelector('#copy-calendar');
+        input.setSelectionRange(0, input.value.length + 1);
+        try {
+            var success = document.execCommand('copy');
+            if (success) {
+                $('#copy-cal-btn').trigger('copied', ['Copied!']);
+            } else {
+                $('#copy-cal-btn').trigger('copied', ['Copy with Ctrl-c']);
+            }
+        } catch (err) {
+            $('#copy-cal-btn').trigger('copied', ['Copy with Ctrl-c']);
+        }
+    });
+    $('#copy-cal-btn').bind('copied', function(event, message) {
+        $(this).attr('title', message)
+            .tooltip('fixTitle')
+            .tooltip('show')
+            .attr('title', "Copy to Clipboard")
+            .tooltip('fixTitle');
+    });
+
+
+})(jQuery); // End of use strict
