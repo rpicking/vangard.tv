@@ -238,12 +238,10 @@ section h2.section-title {
     margin-bottom: 15px;
 }
 
-i {
+
+/* ----- i {
     margin-right: 5px;
-}
-
-
-/* ----- INTRO ----- */
+}INTRO ----- */
 
 #intro-section {
     margin-top: 50px;
@@ -278,10 +276,6 @@ i {
     margin-bottom: 6px;
 }
 
-#copy-cal-btn {
-    padding-right: 5px;
-}
-
 .centered {
     display: inline-block;
     float: none;
@@ -292,22 +286,67 @@ i {
 
 #notifications-section {}
 
+#notifications-section h3 {
+    margin-top: 40px;
+}
+
 
 /* ----- Upcoming ----- */
 
-#upcoming-section {}
+#upcoming-section {
+}
 
 
 /* ----- Contact ----- */
+/* Background pattern from subtlepatterns.com */
+#contact-section {
+    background-image: url("../img/cartographer.png");
+    color: white;
+}
 
-#contact-section {}
+
+/* ----- Footer ------ */
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer .copyright {
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+footer .social-buttons {
+    margin-bottom: 0;
+}
+
+footer .social-buttons li a {
+    display: block;
+    background-color: #222222;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.social-buttons li a:hover,
+.social-buttons li a:focus,
+.social-buttons li a:active {
+  background-color: #730606;
+}
 
 .pop {
     cursor: pointer;
 }
 
 .modal {
-    text-align:center;
+    text-align: center;
 }
 
 .modal-dialog {
