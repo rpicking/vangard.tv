@@ -287,10 +287,13 @@ section h2.section-title {
     margin-top: 40px;
 }
 
-
 /* ----- Upcoming ----- */
 
 #upcoming-section {}
+
+.well {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
 
 /* ----- Contact ----- */
 /* Background pattern from subtlepatterns.com */
@@ -334,6 +337,10 @@ footer .social-buttons li a {
 }
 .social-buttons li a:hover {
   background-color: #730606;
+}
+
+footer .side-buttons li {
+    display: inline;
 }
 
 /* ----- Popup Image Modal ------ */
