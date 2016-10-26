@@ -74,7 +74,7 @@ h2 {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
-    color: white;
+    color: #C7C7C7;
 }
 
 .navbar-custom .nav li a:hover,
@@ -117,8 +117,19 @@ h2 {
 
 .dropdown-menu {
     background-color: #222222;
-    color: white;
 }
+.navbar .nav > li.dropdown.open > a {
+    color: #fff;
+    background-color: #930505;
+    border-radius: 3px;
+}
+.navbar .nav > li.dropdown.open > a:hover {
+    background-color: #730606;
+}
+.navbar .nav > li.dropdown.open > ul.dropdown-menu a:hover {
+    background-color: #222222;
+}
+
 
 .container-fluid {
     padding-right: 0px;
@@ -166,21 +177,7 @@ h2 {
     padding: 10px 20px;
 }
 
-.btn-xl:hover,
-.btn-xl:focus,
-.btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
-    color: white;
-    background-color: #730606;
-    border-color: #730606;
-}
 
-.btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
-    background-image: none;
-}
 
 @media (min-width: 768px) {
     header .intro-text {
@@ -293,9 +290,7 @@ section h2.section-title {
 
 /* ----- Upcoming ----- */
 
-#upcoming-section {
-}
-
+#upcoming-section {}
 
 /* ----- Contact ----- */
 /* Background pattern from subtlepatterns.com */
@@ -310,11 +305,13 @@ section h2.section-title {
 footer {
     padding: 25px 0;
     text-align: center;
+    background-color: #222222;
+    color: #a6a6a7;
 }
 
 footer .copyright {
-    line-height: 40px;
-    vertical-align: middle;
+    line-height: 65px;
+    font-weight: bold;
 }
 
 footer .social-buttons {
@@ -323,24 +320,23 @@ footer .social-buttons {
 
 footer .social-buttons li a {
     display: block;
-    background-color: #222222;
+    background-color: white;
     height: 40px;
     width: 40px;
     border-radius: 100%;
     font-size: 20px;
     line-height: 40px;
-    color: white;
+    color: black;
     outline: none;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
-.social-buttons li a:hover,
-.social-buttons li a:focus,
-.social-buttons li a:active {
+.social-buttons li a:hover {
   background-color: #730606;
 }
 
+/* ----- Popup Image Modal ------ */
 .pop {
     cursor: pointer;
 }

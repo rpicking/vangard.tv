@@ -10,13 +10,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"></link>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel='stylesheet' href='css/nprogress.css'/>
     <!-- Javascript -->
     <script src="https://use.fontawesome.com/8e039405ac.js"></script>
 </head>
 
-<body id="page-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="46">
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
@@ -49,13 +50,12 @@
                         <a id="notifications-nav" class="page-scroll" href="#notifications-section"><i class="fa fa-circle fa-fw" aria-hidden="true"></i>Notifications</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Options<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Report Issue</a></li>
                             <li><a href="#">Contact Me</a></li>
+                            <li><a target="_blank" data-toggle="tooltip" title="Like what I do? Buy me a beer!" data-placement="bottom" 
+                                href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZXKHS4UPC9RLS">Donate</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -131,7 +131,7 @@
                     <h4>Vangard is your own personal netflix.  Combining multiple services like requesting new media, calendared air dates, and notifications when new movies and shows are added, 
                     Vangard sets out to give you a simple, easy to use entertainment experience. Now that you're here, lets jump right in.</h4>
                     <h2>Status</h2>
-                    <p>To check the status of a service, look for the colored status indicator next to the service.</p>
+                    <p>To check the status of a service, look for the colored status indicator.</p>
                     <p><strong>For Example:</strong></p>
                     <div id="indicator-ex" class="row">
                         <div class="col-md-6 centered">
@@ -219,7 +219,7 @@
                     <div id="upcoming" class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="thumbnail">
-                                <img src="img/sync.png" alt="">
+                                <img src="img/sync.png" alt="Plex Sync">
                                 <div class="caption">
                                     <h3>Plex Sync</h3>
                                     <p>Sync movies and tv shows for offline viewing.</p>
@@ -232,7 +232,7 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="thumbnail">
-                                <img src="img/cloud.png" alt="">
+                                <img src="img/cloud.png" alt="Plex Cloud">
                                 <div class="caption">
                                     <h3>Plex in the Cloud</h3>
                                     <p>Watch plex anytime 24/7. No buffering, no downtime, no problem.</p>
@@ -245,26 +245,26 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="thumbnail">
-                                <img src="img/notifications.png" alt="">
-                                <div class="caption">
-                                    <h3>Personalized Notifications</h3>
-                                    <p>Receive emails or slack notifications for specific shows or categories that you want.</p>
-                                    <p><strong>ETA: 3+ months</strong></p>
-                                    <p>
-                                        <a href="#personal-notif" class="page-scroll btn btn-default">More Info</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="thumbnail">
-                                <img src="img/webcalendar.png" alt="">
+                                <img src="img/webcalendar.png" alt="Web Calendar">
                                 <div class="caption">
                                     <h3>Web Calendar</h3>
                                     <p>Air dates, release dates and more all on our easy to use web calendar.</p>
                                     <p><strong>ETA: 1-2 months</strong></p>
                                     <p>
                                         <a href="#web-calendar" class="page-scroll btn btn-default">More Info</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="thumbnail">
+                                <img src="img/notifications.png" alt="Personal Notification">
+                                <div class="caption">
+                                    <h3>Personalized Notifications</h3>
+                                    <p>Receive emails or slack notifications for specific shows or categories that you want.</p>
+                                    <p><strong>ETA: 3+ months</strong></p>
+                                    <p>
+                                        <a href="#personal-notif" class="page-scroll btn btn-default">More Info</a>
                                     </p>
                                 </div>
                             </div>
@@ -335,7 +335,7 @@
                 <div class="col-lg-12">
                     <h2 class="section-title">Calendar</h2>
                     <span class="pop">
-                            <img width="500" src="img/calendar-example.png">
+                            <img width="500" src="img/calendar-example.png" alt="Example look for web calendar">
                     </span>
                     <h3>Web calendar coming soon!</h3>
                     <h4>To add the calendar to gmail, icloud, etc. add the address below as an external calendar.<h4>
@@ -397,10 +397,61 @@
                 <div class="col-lg-12">
                     <h2 class="section-title">Upcoming Features</h2>
                 </div>
+                <div class="col-lg-10 media well centered">
+                    <div class="media-left media-middle">
+                        <img width="300" class="media-object" src="img/sync.png" alt="Plex Sync">
+                    </div>
+                    <div class="media-body text-justify">
+                        <h3 class="media-heading">Plex Sync</h3>
+                        <p>Using plex's built in sync features, you will be able to select movies, tv shows or sports to download and be able to view offline.  Because this feature relies heavily on my home server
+                        bandwidth, this will have a limited release, most likely in the form of limited download speeds, or item counts.  After the Vangard Plex Cloud server is online and operational, the limits will
+                        be removed and you will be able to fully enjoy the feature.</p>
+                        <p><strong>ETA: 1-2 weeks for limited access.<br>Full access after Plex Cloud</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-10 media well centered">
+                    <div class="media-left media-middle">
+                        <img width="300" class="media-object" src="img/cloud.png" alt="Plex Cloud">
+                    </div>
+                    <div class="media-body text-justify">
+                        <h3 class="media-heading">Plex in the Cloud</h3>
+                        <p>While the process has already been started, which you may have noticed with more buffering in plex than usual, this process will take anywhere from 1 to 3 months to upload everything to
+                        the cloud.  When its done you can expect to rarely, if at all, see any buffering or slowdowns and will be able to stream anywhere anytime to your hearts content.  I will be experimenting
+                        with this feature for a few months after it is launched, but because it is not free for me to operate this, I may choose to end it depending on cost, usage, etc.  For now, you can assume
+                        that I will be running this feature indefinitely unless the costs become too much to bear.</p>
+                        <p><strong>ETA: 1-3 months, highly dependent on time it takes to upload all media to cloud</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-10 media well centered">
+                    <div class="media-left media-middle">
+                        <img width="300" class="media-object" src="img/webcalendar.png" alt="Web Calendar">
+                    </div>
+                    <div class="media-body text-justify">
+                        <h3 class="media-heading">Web Calendar</h3>
+                        <p>While there is already an external calendar that can be used in gmail, icloud, etc. sometimes you just want to quickly check the air date of an episode. The web calendar will show
+                        all of the air dates for shows that have been added from requests, or are currently in plex and thus being tracked. A potential additional feature of this would include adding upcoming movie
+                        release date in theaters, or the release of the blu-ray for a requested movie.</p>
+                        <p><strong>ETA: 1-2 months, depending on additional features added.</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-10 media well centered">
+                    <div class="media-left media-middle">
+                        <img width="300" class="media-object" src="img/notifications.png" alt="Personal Notification">
+                    </div>
+                    <div class="media-body text-justify">
+                        <h3 class="media-heading">Personal Notifications</h3>
+                        <p>While having the current notification system is great, it can get tiresome to get spammed with notifications that you might not have any interest in.  The new notification system 
+                        will allow you to select which shows or movies that you want notifications for.  Whether that is only movies and shows that you requested, or subscribing to notifications for certain shows
+                        or even all of them.  The way in which multiple similar notifications will be announced will also change.</p>
+                        <p>For example, instead of receiving a separate notification for each episode
+                        when an entire season or show is added, you will see on saying the over added status. (Season 1 added, Episodes 1,2,3,4 of Season 2 added).</p>
+                        <p><strong>ETA: 3+ months, because this requires a complete rewrite, other upcoming features will be prioritized.</strong></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-        <!-- Contact Section -->
+        <!-- Contact Section
     <section id="contact-section" class="">
         <div class="container">
             <div class="row">
@@ -409,17 +460,17 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; 2016 Vangard Network. All rights reserved.</span>
+                    <span class="copyright">&copy; 2016 Vangard.tv. All rights reserved.</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a target="_blank" href="https://github.com/rpicking"><i class="fa fa-github" aria-hidden="true"></i></a>Github
+                        <li><a target="_blank" href="https://github.com/rpicking/vangard.tv"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>Github
                         </li>
                     </ul>
                 </div>
@@ -446,7 +497,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
     <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/vangard.js"></script>
+    <script src="js/nprogress.js" type="text/javascript"></script>
+    <script src="js/vangard.js" type="text/javascript"></script>
 </body>
 
 </html>

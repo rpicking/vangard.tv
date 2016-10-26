@@ -10,12 +10,6 @@
         event.preventDefault();
     });
 
-    // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 46
-    });
-
     /* Closes the Responsive Menu on Menu Item Click
     //$('.navbar-collapse ul li a').click(function() {
     //    $('.navbar-toggle:visible').click();
@@ -28,9 +22,10 @@
         }
     });
 
-    // Start opening carousel
+    // Start carousel and tooltip
     $(function() {
         $('#myCarousel').carousel();
+        $('[data-toggle="tooltip"]').tooltip();
     });
 
     // Open modal after clicking on image
@@ -68,3 +63,20 @@
 
 
 })(jQuery); // End of use strict
+
+// Show the progress bar 
+    NProgress.start();
+
+    // Increase randomly
+    var interval = setInterval(function() { NProgress.inc(); }, 1000);        
+
+    // Trigger finish when page fully loaded
+    jQuery(window).load(function () {
+        clearInterval(interval);
+        NProgress.done();
+    });
+
+    // Trigger bar when exiting the page
+    jQuery(window).unload(function () {
+        NProgress.start();
+    });
